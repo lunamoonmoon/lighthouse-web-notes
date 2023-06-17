@@ -1,0 +1,17 @@
+## Comand Line Arguments
+Command line arguments are strings of text used to pass additional information to a program when an application is run through the command line interface (CLI) of an operating system. Command line arguments typically include information used to set configuration or property values for an application.
+```bash
+[runtime] [script_name] [argument-1 argument-2 argument-3 ... argument-n]
+```
+## Why use a CL argument
+* Can pass info b/f app starts
+* CL args are passed as strings to program
+* Can pass unlimited number of args via CL
+* CL aargs are used in conjunction w scripts and batch files (useful for auto testing)
+
+## How to use w Node.js
+`process.argv` array is a global obj. For this array index 0 will be file system path to node, index 1 is name of js file, then next index's are users arguments.
+Now write code with process.argv array and it will call arguments user enters at terminal by writing
+```bash
+node filename.js arg1 arg2
+```
